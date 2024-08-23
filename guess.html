@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS GAME</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+
+<body>
+    <center>
+        <div class="first">
+            <img src="https://raw.githubusercontent.com/thiagodnf/guess-the-number/master/images/logo.png?token=AAG9XwrL-t72tifQ-eA47lewNBqqV9Nwks5cDnuJwA%3D%3D"><br>
+            <button id="play">PLAY</button>
+        </div>
+        <div class="second">
+            <h1>This Game Has 3 Levels</h1>
+            <ol>
+                <li>LEVEL1</li>
+                <li>LEVEL2</li>
+                <li>LEVEL3</li>
+            </ol>
+            <button id="start">START</button><br>
+            <button class="back1">back</button>
+        </div>
+        <div class="level1">
+            <div class="level1div">
+                <h1>WELCOME TO LEVEL-1</h1>
+                <h2>GUESS THE NUMBER</h2>
+                <h3>Enter a number from 1 to 20</h3>
+                <input type="number" class="guessnumber1"><br>
+                <button class="button1" onclick="check1()">check</button>
+                <p class="result1">you are right/wrong</p>
+                <p id="score1">you have only 10 chance</p>
+                <button class="lev2">LEVEL2</button><br>
+                <button class="back2">Back</button>
+            </div>
+        </div>
+        <div class="level2">
+            <div class="level2div">
+                <h1>WELCOME TO LEVEL-2</h1>
+                <h2>GUESS THE NUMBER</h2>
+                <h3>Enter a number from 1 to 50</h3>
+                <input type="number" class="guessnumber2"><br>
+                <button class="button2" onclick="check2()">check</button>
+                <p class="result2">you are right/wrong</p>
+                <p id="score2">you have only 5 chance</p>
+                <button class="lev3">LEVEL3</button><br>
+                <button class="back3">Back</button>
+                
+            </div>
+        </div>
+        <div class="level3">
+            <div class="level3div">
+                <h1>WELCOME TO LEVEL-3</h1>
+                <h2>GUESS THE NUMBER</h2>
+                <h3>Enter a number from 1 to 100</h3>
+                <input type="number" class="guessnumber3"><br>
+                <button class="button3" onclick="check3()">check</button>
+                <p class="result3">you are right/wrong</p>
+                <p id="score3">you have only 2 chance</p>
+                <button class="back4">EXIT</button>
+            </div>
+        </div>
+    </center>
+    <script src="guess.js"></script>
+</body>
+
+</html>
